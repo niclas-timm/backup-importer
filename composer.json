@@ -1,0 +1,34 @@
+{
+  "name": "niclas-timm/laravel-db-importer",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "NiclasTimm\\LaravelDbImporter\\": "src/",
+      "NiclasTimm\\LaravelDbImporter\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Niclas",
+      "email": "niclastimmdev@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^10.2",
+    "orchestra/testbench": "^8.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "NiclasTimm\\LaravelDbImporter\\DbImporterServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "ext-zip": "*",
+    "league/flysystem-aws-s3-v3": "^3.15",
+    "ext-zlib": "*"
+  }
+}
